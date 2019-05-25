@@ -19,6 +19,15 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.search{
+    margin-top: 5px;
+    width: 39px;
+    height: 39px;
+    float: right;
+    display: inline;
+    cursor: pointer;
+    background:url("../image/bg.png")no-repeat center !important;
+}
 .banner{
     height: 280px;
     width: 1200px;
@@ -70,6 +79,13 @@ body{
     height: 100px;
     width: 274px;
     background-color: #1994d2;
+}
+.contentLeft li a{
+    display: block;
+}
+.contentLeft li img {
+    width: 100%;
+    height: 100px
 }
 .contentRight{
     height: 210px;
@@ -148,6 +164,19 @@ div.firstLineR p.updateContent{
      border-bottom: 1px solid;
      padding-bottom: 12px;
 }
+ /*div.tittle:before{*/
+ /*    content: "";*/
+ /*    position: absolute;*/
+ /*    width: 60px;*/
+ /*    height: 2px;*/
+ /*    content: "";*/
+ /*    background: #000;*/
+ /*    bottom: -7px;*/
+ /*    -moz-transition: all .5s ease;*/
+ /*    -webkit-transition: all .5s ease;*/
+ /*    transition: all .5s ease;*/
+ /*    display: block;*/
+ /*}*/
 ul.update{
     padding-top: 28px;
     border-bottom: none;
@@ -264,13 +293,13 @@ h1{
     margin-top:5px ;
 
 }
-.search{
-    width: 50px;
-    height:100%;
-    background-color: #ff52de;
-    float: right;
+/*.search{*/
+/*    width: 50px;*/
+/*    height:100%;*/
+/*    background-color: #ff52de;*/
+/*    float: right;*/
 
-}
+/*}*/
 div.nav{
     height: 45px;
     background-color: #1c2327;
@@ -306,7 +335,7 @@ ul.choose{
     width: 620px;
     height: 262px;
     position: relative;
-
+    z-index: 999;
 }
 li.choose{
     width: 620px;
@@ -318,18 +347,52 @@ li.choose{
 .choose a {
     width: 100%;
     height: 100%;
+    display: block;
 }
 .choose img {
     width: 100%;
     height: 100%;
 }
-div.button{
+div.button-prev{
     width: 40px;
     height: 32px;
-    color:red;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    right: auto;
+    left: 10px;
+    top: 50%;
+    z-index: 999;
+}
+div.button-next{
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    left: auto;
+    top: 50%;
+    z-index: 999;
+}
+.pagelist{
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    line-height: 40px;
+    bottom: 0;
+    text-align: center;
+    z-index: 999;
+}
+.pagelist li{
+    display: block;
+    border-radius: 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin:9px 7px ;
+    background: #fff;
+    opacity: .9;
+    text-indent: -9999px;
+    cursor: pointer;
+    transition: all 150ms;
 }
 div.banner ul.middle{
     width: 268px;
@@ -381,7 +444,25 @@ ul.middle a{
     background-color: #2a2a2a;
     float: right;
 }
-
+.card>h2{
+    font-size: 22px;
+    margin: 10px;
+    color: #89919a;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.card>p{
+    font-size: 12px;
+    padding: 0 0 0 20px;
+    line-height: 28px;
+    text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+    color: #d0d2d4;
+    -webkit-animation: animations2 5s ease-in-out 5s;
+    -moz-animation: animations2 5s ease-in-out 5s;
+    -o-animation: animations2 5s ease-in-out 5s;
+    -ms-animation: animations2 5s ease-in-out 5s;
+    animation: animations2 5s ease-in-out 5s;
+}
 .area{
     width: 1200px;
     background: #e9eaed;
