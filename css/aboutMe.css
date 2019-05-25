@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+body{
+    background-color: #e9eaed;
+    font-size: 16px;
+}
+.header{
+    height: 60px;
+    width: 100%;
+    background: #1c2327;
+}
+.headerBox{
+    height: 100%;
+    width: 1200px;
+    background: #1c2327;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search{
+    margin-top: 5px;
+    width: 39px;
+    height: 39px;
+    float: right;
+    display: inline;
+    cursor: pointer;
+    background:url("../image/bg.png")no-repeat center !important;
+}
+.blog{
+    width: 160px;
+    height: 100%;
+    background: #1c2327;
+    float: left;
+}
+.blog>h1{
+    color: white;
+    background: #1c2327;
+    margin-top:5px ;
+}
+div.nav{
+    height: 45px;
+    background-color: #1c2327;
+    color: white;
+    margin-top: 15px;
+    float: left;
+}
+ul.nav{
+    background-color:  #1c2327;
+    list-style: none;
+}
+ul.nav li{
+    float: left;
+    margin-right: 40px;
+    background-color:  #1c2327;
+
+}
+.nav a{
+
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #1994d2 ;
+}
+article{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.whitebg{
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.timebg{
+    background: url("../image/abbg.png") no-repeat right top #fff;
+    padding: 30px;
+}
+.topClass{
+    overflow: hidden;
+    margin: 20px 0;
+}
+i.avatar{
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    background: -webkit-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7));
+    background: -o-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7));
+    background: linear-gradient(to top right, rgba(0,153,255,.9), rgba(42,228,197,.7));
+    display: block;
+    padding: 2px;
+    width: 100px;
+    border-radius: 50%;
+}
