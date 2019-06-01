@@ -335,14 +335,17 @@ ul.choose{
     width: 620px;
     height: 262px;
     position: relative;
-    z-index: 999;
+    overflow: hidden;
 }
 li.choose{
     width: 620px;
     height: 262px;
     position: absolute;
-    left: 0px;
+    left: 620px;
     top: 0px;
+}
+li.choose:first-child{
+    left: 0;
 }
 .choose a {
     width: 100%;
@@ -377,7 +380,7 @@ div.button-next{
     height: 26px;
     padding: 0;
     line-height: 40px;
-    bottom: 0;
+    bottom: 25px;
     text-align: center;
     z-index: 999;
 }
@@ -390,10 +393,13 @@ div.button-next{
     margin:9px 7px ;
     background: #fff;
     opacity: .9;
-    text-indent: -9999px;
     cursor: pointer;
-    transition: all 150ms;
+    transition: all .8s;
 }
+.pagelist li.hot{
+    background-color: #41b2fc;
+}
+
 div.banner ul.middle{
     width: 268px;
     height: 280px;
@@ -511,6 +517,21 @@ ul.recommendList li{
     border-bottom: 1px solid;
     border-left: 1px solid;
     padding: 20px;
+
+
+}
+ul.recommendList li:nth-child(1) {
+    border-left: 0px;
+}
+ul.recommendList li:nth-child(4) {
+    border-left: 0px;
+    border-bottom: 0px;
+}
+ul.recommendList li:nth-child(5) {
+    border-bottom: 0px;
+}
+ul.recommendList li:nth-child(6) {
+    border-bottom: 0px;
 }
 ul.recommendList li:hover{
     background: #ffffff;
@@ -624,5 +645,42 @@ div.areaRightImage{
     color: #ffffff;
 
 }
+footer {
+    background: #373D41;
+    width: 100%;
+    border-top: #00C1DE 10px solid;
+    padding: 30px 0;
+    color: #73777a;
+    font-size: 14px;
+}
+
+.box {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.wxbox {
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.wxbox li {
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+.wxbox img {
+    height: 100px;
+}
+.endnav p {
+    margin-bottom: 5px;
+}
+.endnav b {
+    font-size: 16px;
+    color: #00c1de;
+}
+
+
+
 
 
