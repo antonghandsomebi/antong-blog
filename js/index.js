@@ -1,4 +1,8 @@
 window.onload=function () {
+    $(function () {
+        $('img').lazyload({effect:"fadeIn"})
+    })
+
     let home = document.getElementById("home")
     home.onmouseenter = function () {
         home.style.color = "red";
@@ -146,12 +150,12 @@ window.onload=function () {
     //             bannerImg[index].style.zIndex=999
     //         }
     //     }
-    // list[i].onmouseleave = function () {
-    //     t = setInterval(buttonnext.onclick, 3000)
-    // }
-    // choose.onmouseleave = function () {
-    //     t = setInterval(buttonnext.onclick, 3000)
-    // }
+    list[i].onmouseleave = function () {
+        t = setInterval(buttonnext.onclick, 3000)
+    }
+    choose.onmouseleave = function () {
+        t = setInterval(buttonnext.onclick, 3000)
+    }
 
     let viewH = window.innerHeight;
     let imgs = document.querySelectorAll(".lazyload");
